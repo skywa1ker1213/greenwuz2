@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER STARTS-->
+    <header>
+        <!-- TOP BAR STARTS -->
+        <div class="top__bar">
+            <div class="container">
+                <div class="top__bar-content">
+                    <a href="index.html">
+                        <img class="logo" src="img/greenwuz-logo.png" alt="">
+                    </a>
+
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+
+                        <div>
+                            <h2>
+                                Адрес
+                            </h2>
+
+                            <a href="#">
+                                <h4>Янгиюль, рядом с новым мостом, напротив "TEXNO CITY" здание "ZAFFA EDU"</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <div>
+                            <h2>
+                                Номер телефона
+                            </h2>
+
+                            <a href="#">
+                                <h4>+998 99 404 34 44</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                        <div>
+                            <h2>
+                                Телеграм
+                            </h2>
+
+                            <a href="#">
+                                <h4>@greenwuz.uz</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOP BAR END -->
+
+        <!-- NAV STARTS -->
+        <nav>
+            <div class="container">
+                <div class="nav__block">
+                    <ul class="nav__list">
+                        <div>
+                            <a href="#">
+                                <img class="mobilerBar-logo" src="img/greenwuz-logo.png" alt="">
+                            </a>
+                            <i class="close fa-solid fa-xmark"></i>
+                        </div>
+
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li class="active"><a href="products.html" class="active">Продукты</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+
+                    <div class="buttons gsap__item4">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn" id="selectedOption">RU <i
+                                    class="fa-solid fa-angle-down"></i></button>
+
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" onclick="selectOption(this)">RU</a>
+                                <a href="#" onclick="selectOption(this)">UZ</a>
+                                <a href="#" onclick="selectOption(this)">EN</a>
+                            </div>
+                        </div>
+
+
+                        <a href="cart.html" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> <span
+                                id="cart-count">0</span></a>
+
+                        <button>Войти</button>
+
+                        <i class="open fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+    <!-- HEADER END-->
+
+
+    <main>
+        <div class="added-products container">
+            <h1 class="gsap__title">КОРЗИНА</h1>
+
+            <form action="success.html" id="cart-items">
+                <div class="gsap__text" id="cart-div"></div>
+                <div class="cart-summary"></div>
+            </form>
+
+            <a href="products.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+
+
+        <section class="recommended website-section">
+            <div class="container">
+                <div class="recommended__content">
+                    <div>
+                        <h2 class="js-content-opacity">Рекомендуемые товары</h2>
+
+                        <h6 class="js-content-opacity"><a href="products.html">Посмотреть все <i
+                                    class="fa-solid fa-arrow-right-long"></i></a></h6>
+                    </div>
+
+                    <div class="recommended__block">
+                        <div class="card f-cat js-content-opacity">
+                            <span class="card-bg"></span>
+                            <div class="content">
+                                <img src="img/merchendise-img1.png" alt="">
+
+                                <div>
+                                    <h3 class="name">
+                                        Свежая картошка
+                                    </h3>
+
+                                    <h4 class="price">
+                                        5 500 сум за кг
+                                    </h4>
+                                </div>
+
+                                <div>
+                                    <p>
+                                        Заказывайте вкусный и свежий картофель по кнопке
+                                    </p>
+
+                                    <button class="cta">
+                                        <a href="productInfo.html">
+                                            <span>Купить</span>
+                                        </a>
+                                        <svg width="15px" height="10px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card f-cat js-content-opacity">
+                            <span></span>
+                            <div class="content">
+                                <img src="img/merchendise-img1.png" alt="">
+
+                                <div>
+                                    <h3 class="name">
+                                        Свежая картошка
+                                    </h3>
+
+                                    <h4 class="price">
+                                        5 500 сум за кг
+                                    </h4>
+                                </div>
+
+                                <div>
+                                    <p>
+                                        Заказывайте вкусный и свежий картофель по кнопке
+                                    </p>
+
+                                    <button class="cta">
+                                        <span>Купить</span>
+                                        <svg width="15px" height="10px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card f-cat js-content-opacity">
+                            <span></span>
+                            <div class="content">
+                                <img src="img/merchendise-img1.png" alt="">
+
+                                <div>
+                                    <h3 class="name">
+                                        Свежая картошка
+                                    </h3>
+
+                                    <h4 class="price">
+                                        5 500 сум за кг
+                                    </h4>
+                                </div>
+
+                                <div>
+                                    <p>
+                                        Заказывайте вкусный и свежий картофель по кнопке
+                                    </p>
+
+                                    <button class="cta">
+                                        <span>Купить</span>
+                                        <svg width="15px" height="10px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card f-cat js-content-opacity">
+                            <span></span>
+                            <div class="content">
+                                <img src="img/merchendise-img1.png" alt="">
+
+                                <div>
+                                    <h3 class="name">
+                                        Свежая картошка
+                                    </h3>
+
+                                    <h4 class="price">
+                                        5 500 сум за кг
+                                    </h4>
+                                </div>
+
+                                <div>
+                                    <p>
+                                        Заказывайте вкусный и свежий картофель по кнопке
+                                    </p>
+
+                                    <button class="cta">
+                                        <span>Купить</span>
+                                        <svg width="15px" height="10px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="#">
+                        <img src="img/footer__logo.png" alt="">
+                    </a>
+
+                    <h3>
+                        <a href="#">
+                            г. Янгиюль, рядом с новым мостом,
+                            напротив "TEXNO CITY" здание
+                            "ZAFFA EDU"
+                        </a>
+                    </h3>
+                </div>
+
+                <div class="footer__nav">
+                    <a href="javascript:void(0)" id="backToTop" class="back-to-top" style="display:none;">
+                        <i class="icon__arrow-up fa-solid fa-chevron-up"></i>
+                    </a>
+
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Продукты</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <div>
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">@greenwuz.uz</a>
+                    </div>
+
+                    <h4>
+                        <a href="#">+998 (99) 404 34 44</a>
+                        <a href="#">+998 (99) 800 38 78</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="libs/jquery.min.js"></script>
+
+    <script src="libs/gsap.min.js"></script>
+
+    <script src="libs/ScrollTrigger.min.js"></script>
+
+    <script src="js/gsapMain.js"></script>
+
+    <script src="js/cartJs/cartGsap.js"></script>
+
+    <script src="js/gsapSrollTrigger.js"></script>
+
+    <script src="js/productInfo/productInfoGsap.js"></script>
+
+    <script src="js/productInfo/productInfo.js"></script>
+
+    <!-- LAYOUT MAIN CUSTOM JS -->
+    <script src="js/main.js"></script>
+
+    <!-- PRODUCTINFO CUSTOM JS -->
+    <script src="js/productInfo/productInfo.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="libs/FontAwesome.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
+
+</body>
+
+</html>

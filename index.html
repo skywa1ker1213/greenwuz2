@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <!-- LIGTH GALLERY CSS -->
+    <link rel="stylesheet" href="css/lightgallery.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER STARTS-->
+    <header>
+        <!-- TOP BAR STARTS -->
+        <div class="top__bar">
+            <div class="container">
+                <div class="top__bar-content">
+                    <a href="index.html">
+                        <img class="logo" src="img/greenwuz-logo.png" alt="">
+                    </a>
+
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+
+                        <div>
+                            <h2>
+                                Адрес
+                            </h2>
+
+                            <a href="#">
+                                <h4>Янгиюль, рядом с новым мостом, напротив "TEXNO CITY" здание "ZAFFA EDU"</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <div>
+                            <h2>
+                                Номер телефона
+                            </h2>
+
+                            <a href="#">
+                                <h4>+998 99 404 34 44</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                        <div>
+                            <h2>
+                                Телеграм
+                            </h2>
+
+                            <a href="#">
+                                <h4>@greenwuz.uz</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOP BAR END -->
+
+        <!-- NAV STARTS -->
+        <nav>
+            <div class="container">
+                <div class="nav__block">
+                    <ul class="nav__list">
+                        <div>
+                            <a href="#">
+                                <img class="mobilerBar-logo" src="img/greenwuz-logo.png" alt="">
+                            </a>
+                            <i class="close fa-solid fa-xmark"></i>
+                        </div>
+
+                        <li class="active"><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Продукты</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+
+                    <div class="buttons gsap__item4">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn" id="selectedOption">RU <i
+                                    class="fa-solid fa-angle-down"></i></button>
+
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" onclick="selectOption(this)">RU</a>
+                                <a href="#" onclick="selectOption(this)">UZ</a>
+                                <a href="#" onclick="selectOption(this)">EN</a>
+                            </div>
+                        </div>
+
+
+                        <a href="cart.html" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> <span
+                                id="cart-count">0</span></a>
+
+                        <button>Войти</button>
+
+                        <i class="open fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+    <!-- HEADER END-->
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- MAIN STARTS-->
+            <main>
+                <section class="fresh">
+                    <div class="container">
+                        <div class="fresh__content">
+                            <img class="fresh-bg" src="img/fresh-bg.png" alt="">
+                            <img class="fresh-bg2" src="img/fresh-bg2.png" alt="">
+
+                            <div class="fresh__info" data-speed=".7">
+                                <h1 class="gsap__title">Свежая овощи и фрукты</h1>
+
+                                <h3 class="gsap__text">
+                                    ЭКОЛОГИЧНЫЕ.
+                                    НАТУРАЛЬНЫЕ. ВКУСНЫЕ
+                                </h3>
+
+                                <p class="gsap__txt">
+                                    A premium dairy products that upraises quality, freshness taste.
+                                </p>
+
+                                <div>
+                                    <a href="#">
+                                        <button class="fresh__info-button">Explore our catalog</button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="fresh__info-button">Contact us</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="fresh__block">
+                                <img class="fresh__img" src="img/fresh-img.png" alt="fresh-img" data-lag=".5">
+                                <img class="fresh__block-bg" src="img/fresh__block-bg.png" alt="fresh__block-bg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="healthy website-section">
+                    <div class="container">
+                        <div class="healthy__content">
+                            <h2 class="js-content-opacity">
+                                <span>GREEN<span>WUZ</span></span> предлагает
+                                вам свежие и полезные овощи
+                            </h2>
+
+                            <div class="swiper healthySwiper js-content-opacity">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card f-cat">
+                                            <span></span>
+                                            <div class="content">
+                                                <img src="img/merchendise-img1.png" alt="">
+
+                                                <div>
+                                                    <h3 class="name">
+                                                        Свежая картошка
+                                                    </h3>
+
+                                                    <h4 class="price">
+                                                        5 500 сум за кг
+                                                    </h4>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Заказывайте вкусный и свежий картофель по кнопке
+                                                    </p>
+
+                                                    <h5>
+                                                        <a href="productInfo.html">Купить</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card f-cat">
+                                            <span></span>
+                                            <div class="content">
+                                                <img src="img/merchendise-img1.png" alt="">
+
+                                                <div>
+                                                    <h3 class="name">
+                                                        Свежая картошка
+                                                    </h3>
+
+                                                    <h4 class="price">
+                                                        5 500 сум за кг
+                                                    </h4>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Заказывайте вкусный и свежий картофель по кнопке
+                                                    </p>
+
+                                                    <h5>
+                                                        <a href="productInfo.html">Купить</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card f-cat">
+                                            <span></span>
+                                            <div class="content">
+                                                <img src="img/merchendise-img1.png" alt="">
+
+                                                <div>
+                                                    <h3 class="name">
+                                                        Свежая картошка
+                                                    </h3>
+
+                                                    <h4 class="price">
+                                                        5 500 сум за кг
+                                                    </h4>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Заказывайте вкусный и свежий картофель по кнопке
+                                                    </p>
+
+                                                    <h5>
+                                                        <a href="productInfo.html">Купить</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card f-cat">
+                                            <span></span>
+                                            <div class="content">
+                                                <img src="img/merchendise-img1.png" alt="">
+
+                                                <div>
+                                                    <h3 class="name">
+                                                        Свежая картошка
+                                                    </h3>
+
+                                                    <h4 class="price">
+                                                        5 500 сум за кг
+                                                    </h4>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Заказывайте вкусный и свежий картофель по кнопке
+                                                    </p>
+
+                                                    <h5>
+                                                        <a href="productInfo.html">Купить</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card f-cat">
+                                            <span></span>
+                                            <div class="content">
+                                                <img src="img/merchendise-img1.png" alt="">
+
+                                                <div>
+                                                    <h3 class="name">
+                                                        Свежая картошка
+                                                    </h3>
+
+                                                    <h4 class="price">
+                                                        5 500 сум за кг
+                                                    </h4>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Заказывайте вкусный и свежий картофель по кнопке
+                                                    </p>
+
+                                                    <h5>
+                                                        <a href="productInfo.html">Купить</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card f-cat">
+                                            <span></span>
+                                            <div class="content">
+                                                <img src="img/merchendise-img1.png" alt="">
+
+                                                <div>
+                                                    <h3 class="name">
+                                                        Свежая картошка
+                                                    </h3>
+
+                                                    <h4 class="price">
+                                                        5 500 сум за кг
+                                                    </h4>
+                                                </div>
+
+                                                <div>
+                                                    <p>
+                                                        Заказывайте вкусный и свежий картофель по кнопке
+                                                    </p>
+
+                                                    <h5>
+                                                        <a href="productInfo.html">Купить</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="highest website-section">
+                    <div class="container">
+                        <div class="highest__content">
+                            <div class="highest__block js-content-opacity">
+                                <img class="highest-bg2" src="img/highest-bg2.png" alt="">
+
+                                <img class="highest-img" src="img/highest-img.png" alt="">
+
+                                <img class="highest-bg" src="img/highest-bg.png" alt="">
+
+                                <img class="highest-img2" src="img/highest-img2.png" alt="">
+                            </div>
+
+                            <div class="highest__info js-content-opacity">
+                                <h2 class="box-1" data-lag=".9">
+                                    Создан для тех, кто ценит высокое качество и свежесть.
+                                </h2>
+
+                                <p class="box-1" data-lag=".9">
+                                    Мы производим экологически чистые продукты питания Для Вашей семьи
+                                </p>
+
+                                <div>
+                                    <img class="js-content-opacity" src="img/highiest-img2.png" alt="" data-lag=".5">
+                                    <img class="js-content-opacity" src="img/highiest-img2.png" alt="" data-lag=".9">
+                                    <img class="js-content-opacity" src="img/highiest-img2.png" alt="" data-lag=".7">
+                                    <img class="js-content-opacity" src="img/highiest-img2.png" alt="" data-lag=".9">
+                                    <img class="js-content-opacity" src="img/highiest-img2.png" alt="" data-lag=".8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mainProduct website-section">
+                    <div class="container">
+                        <h2>Наши основные продукты</h2>
+
+                        <div class="mainProduct__content" id="lightgallery">
+                            <a href="img/mainProduct-img.png">
+                                <div class="js-content-opacity animate-up">
+                                    <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                    <h4>Мясо</h4>
+                                </div>
+                            </a>
+
+                            <a href="img/mainProduct-img.png">
+                                <div class="js-content-opacity animate-up">
+                                    <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                    <h4>Мясо</h4>
+                                </div>
+                            </a>
+
+                            <a href="img/mainProduct-img.png">
+                                <div class="js-content-opacity animate-up">
+                                    <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                    <h4>Мясо</h4>
+                                </div>
+                            </a>
+
+                            <a href="img/mainProduct-img.png">
+                                <div class="js-content-opacity animate-up">
+                                    <img src="img/mainProduct-img.png" alt="mainProduct-img">
+
+                                    <h4>Мясо</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact website-section">
+                    <div class="container">
+                        <div class="contact__content">
+                            <div class="contact__block js-content-opacity">
+                                <div>
+                                    <h2>
+                                        Наши контакты
+                                    </h2>
+
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+
+                                        <h5><a href="#">Ташкентская обл. г.Янгиюль, рядом с новым мостом, напротив
+                                                здании "TEXNO
+                                                CITY"</a></h5>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-envelope"></i>
+
+                                        <h5><a href="#">greenwuz@mail.ru</a></h5>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+
+                                        <span>
+                                            <h5><a href="#">+998 (99) 800 38 78</a></h5>
+                                            <h5><a href="#">+998 (99) 800 38 78</a></h5>
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9103748904404!2d69.05292937655604!3d41.11464841286759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae7b816d3f999b%3A0x2a7955e62e0d4137!2sZAFFA%20ACADEMY!5e0!3m2!1sru!2s!4v1715676512226!5m2!1sru!2s"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <div class="login-box js-content-opacity">
+
+                                <form>
+                                    <h3>
+                                        Напишите данные и мы свяжемся с вами
+                                        ближайшее время
+                                    </h3>
+                                    <div class="user-box">
+                                        <input type="text" name="" required="">
+                                        <label>Имя</label>
+                                    </div>
+                                    <div class="user-box">
+                                        <input type="text" name="" required="">
+                                        <label>Номер телефоны</label>
+                                    </div>
+
+                                    <div class="user-box">
+                                        <input type="text" name="" required="">
+                                        <label>Сообщение</label>
+                                    </div>
+
+                                    <a href="#">
+                                        Отправить
+                                        <span></span>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- MAIN END-->
+
+            <footer>
+                <div class="container">
+                    <div class="footer__content">
+                        <div class="footer__info">
+                            <a href="#">
+                                <img src="img/footer__logo.png" alt="">
+                            </a>
+
+                            <h3>
+                                <a href="#">
+                                    г. Янгиюль, рядом с новым мостом,
+                                    напротив "TEXNO CITY" здание
+                                    "ZAFFA EDU"
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="footer__nav">
+                            <a href="javascript:void(0)" id="backToTop" class="back-to-top" style="display:none;">
+                                <i class="icon__arrow-up fa-solid fa-chevron-up"></i>
+                            </a>
+
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="products.html">Продукты</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__social">
+                            <div>
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="#">@greenwuz.uz</a>
+                            </div>
+
+                            <h4>
+                                <a href="#">+998 (99) 404 34 44</a>
+                                <a href="#">+998 (99) 800 38 78</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- LAYOUT JQUERY JS -->
+    <script src="libs/jquery.min.js"></script>
+
+    <script src="libs/gsap.min.js"></script>
+
+    <script src="libs/ScrollTrigger.min.js"></script>
+
+    <script src="libs/ScrollSmoother.min.js"></script>
+    <script src="js/gsamScrollSmother.js"></script>
+
+    <!-- LIGTHGALLERY JS -->
+    <script src="js/lightgallery.js"></script>
+
+    <script src="js/productInfo/productInfo.js"></script>
+
+    <script src="js/gsapMain.js"></script>
+
+    <script src="js/landing/landingGsap.js"></script>
+
+    <script src="js/gsapSrollTrigger.js"></script>
+
+    <!-- LAYOUT SWIPER JS -->
+    <script src="libs/swiper-bundle.min.js"></script>
+
+    <!-- LAYOUT MAIN JS -->
+    <script src="js/main.js"></script>
+
+    <!-- LANDING LANDINGSWIPER JS -->
+    <script src="js/landing/landingSwiper.js"></script>
+
+    <!-- LAYIOUT FONTAWESOME JS -->
+    <script src="libs/FontAwesome.js"></script>
+
+
+    <script>
+        var imagPop = document.getElementById("lightgallery");
+        lightGallery(imagPop);
+    </script>
+</body>
+
+</html>

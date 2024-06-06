@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'int';
+    src: url('../fonts/Inter-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'int';
+    src: url('../fonts/Inter-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'int';
+    src: url('../fonts/Inter-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'pop';
+    src: url('../fonts/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'pop';
+    src: url('../fonts/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'pop';
+    src: url('../fonts/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'mont';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'mont';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
